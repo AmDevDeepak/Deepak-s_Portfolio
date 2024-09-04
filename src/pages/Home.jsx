@@ -8,7 +8,8 @@ import Plane from "../models/Plane";
 import HomeInfo from "../components/HomeInfo";
 
 import skura from "../assets/sakura.mp3";
-import { soundoff, soundon } from "../assets/icons";
+import { arrow, soundoff, soundon } from "../assets/icons";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   const audioRef = useRef(new Audio(skura));
@@ -101,6 +102,20 @@ const Home = () => {
           onClick={() => setIsPlayingMusic(!isPlayingMusic)}
         />
       </div>
+      <a
+        href="../assets/Deepak_Resume.pdf"
+        download="Deepak_Resume.pdf"
+        className="hover:p-3 transition-all p-2 rounded-lg bg-white items-center absolute bottom-5 right-5 flex justify-center text-3xl sm:text-xl max-sm:text-xl font-bold shadow-md"
+      >
+        <p className="blue-gradient_text flex items-center gap-2">
+          Get CV
+          <img
+            src={arrow}
+            alt=""
+            className="rotate-90 w-6 h-6 object-contain"
+          />
+        </p>
+      </a>
     </section>
   );
 };

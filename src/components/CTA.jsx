@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
-import { socialLinks } from "../constants";
-
 const CTA = () => {
   return (
     <div className="cta">
       <p className="cta-text">
-        Oh! you have a message for me ? <br className="sm:block hidden" />
+        Oh! you have a message for me ?{" "}
         <Link to="/contact" className="btn">
           Let's Contact
         </Link>

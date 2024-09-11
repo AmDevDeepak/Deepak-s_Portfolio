@@ -6,7 +6,7 @@ import Sky from "../models/Sky";
 import Bird from "../models/Bird";
 import Plane from "../models/Plane";
 import HomeInfo from "../components/HomeInfo";
-
+import resume from "../assets/Deepak_Resume.pdf";
 import skura from "../assets/sakura.mp3";
 import { arrow, soundoff, soundon } from "../assets/icons";
 import { NavLink } from "react-router-dom";
@@ -103,8 +103,8 @@ const Home = () => {
         />
       </div>
       <a
-        href="../assets/Deepak_Resume.pdf"
-        download="../assets/Deepak_Resume.pdf"
+        href={resume}
+        download={resume}
         className="hover:p-3 transition-all p-2 rounded-lg bg-white items-center absolute bottom-5 right-5 flex justify-center text-3xl sm:text-xl max-sm:text-xl font-bold shadow-md"
       >
         <p className="blue-gradient_text flex items-center gap-2">

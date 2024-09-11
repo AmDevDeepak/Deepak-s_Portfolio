@@ -104,7 +104,7 @@ const Home = () => {
       </div>
       <a
         href="../assets/Deepak_Resume.pdf"
-        download="Deepak_Resume.pdf"
+        download="../assets/Deepak_Resume.pdf"
         className="hover:p-3 transition-all p-2 rounded-lg bg-white items-center absolute bottom-5 right-5 flex justify-center text-3xl sm:text-xl max-sm:text-xl font-bold shadow-md"
       >
         <p className="blue-gradient_text flex items-center gap-2">
